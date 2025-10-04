@@ -29,7 +29,6 @@ public class Restaurant {
     @Column(name = "fee_shipping")
     private BigDecimal feeShipping;
 
-//    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "cuisine_id", nullable = false)
     private Cuisine cuisine;
@@ -67,21 +66,5 @@ public class Restaurant {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
-    }
-
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("Restaurant{");
-        sb.append("id=").append(id);
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", feeShipping=").append(feeShipping);
-        sb.append(", cuisine=").append(cuisine);
-        sb.append(", address=").append(address);
-        sb.append(", createdAt=").append(createdAt);
-        sb.append(", updatedAt=").append(updatedAt);
-        sb.append(", paymentMethods=").append(paymentMethods);
-        sb.append(", products=").append(products);
-        sb.append('}');
-        return sb.toString();
     }
 }

@@ -36,14 +36,4 @@ public class Cuisine {
     public int hashCode() {
         return Objects.hashCode(getId());
     }
-
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("Cuisine{");
-        sb.append("id=").append(id);
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", restaurants=").append(restaurants);
-        sb.append('}');
-        return sb.toString();
-    }
 }

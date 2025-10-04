@@ -3,7 +3,6 @@ package com.thiagodd.algafood.service.impl;
 import com.thiagodd.algafood.domain.City;
 import com.thiagodd.algafood.domain.exception.NotFoundException;
 import com.thiagodd.algafood.repository.CityRepository;
-import com.thiagodd.algafood.repository.StateRepository;
 import com.thiagodd.algafood.service.CityService;
 import com.thiagodd.algafood.service.StateService;
 import org.springframework.stereotype.Service;
