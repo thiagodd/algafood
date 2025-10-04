@@ -3,8 +3,21 @@ spring:
         username: root
         password: password
         url: jdbc:mysql://localhost:3306/algafood
+        hikari:
+            maximum-pool-size: 5
+            minimum-idle: 3
+            idle-timeout: 15000
     jpa:
-        generate-ddl: true
-        hibernate:
-            ddl-auto: create
+        
+        #        generate-ddl: true
+        #        hibernate:
+        #            ddl-auto: create
         show-sql: true
+        properties:
+            jakarta:
+                persistence:
+                    schema-generation:
+                        scripts:
+                            action: create
+                            create-target: src/main/resources/ddl.sql
+
