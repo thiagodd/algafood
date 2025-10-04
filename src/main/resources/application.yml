@@ -1,0 +1,10 @@
+spring:
+    datasource:
+        username: root
+        password: password
+        url: jdbc:mysql://localhost:3306/algafood
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: create
+        show-sql: true
